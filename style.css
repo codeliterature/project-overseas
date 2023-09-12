@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #EEEDED;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  min-height: 10vh;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #eeeded;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open-menu {
+  overflow: hidden;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 0.8rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  color: #ffb6b6;
+
+}
+
+.open {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+
+
+
+}
+
+.close {
+  align-self: start;
+  padding: 2rem;
+}
+
+.fa {
+  font-size: 3rem;
+  color: #36454F;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #ff6b6b;
+}
+
+.hidden {
+  display: none;
+}
+
+.togbtn>p {
+  font-size: 3rem;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  border-radius: 8px;
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bg h2 {
+  font-family: 'Space Grotesk', sans-serif;
+
+  text-align: center;
+  color: #ccc;
+  font-size: 3rem;
+  -webkit-text-stroke: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg p {
+  color: #ccc;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg button {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #ff6b6b;
+  color: snow;
+  font-family: 'Space Grotesk', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.bg button:hover {
+  background: #ff6b6b;
+  color: black;
+}
+
+#about {
+  min-height: 60vh;
+  width: 95%;
+  margin: auto;
+}
+
+video {
+  border-radius: 0.5rem;
+}
+
+.about-section {
+  padding-top: 2.5rem;
+}
+
+#destination {
+  min-height: 100vh;
+}
+
+.des-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.des-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.des-card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  text-align: center;
+}
+
+.des-card p {
+  font-size: 1.4rem;
+  text-align: justify;
+  padding: 1rem;
+  width: 95%;
+  margin: auto;
+}
+
+.des-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+
+  margin: 0;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #ff6b6b;
+}
+
+.des-card a {
+  color: #ff6b6b;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+#services h2 {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.ser-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.ser-card h3,
+.ser-card p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.ser-card p {
+  font-size: 1.4rem;
+}
+
+.ser-card h3 {
+  color: #ff6b6b;
+  font-size: 1.8rem;
+  font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.ser-card {
+  width: 95%;
+  margin: auto;
+
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+footer {
+  min-height: 100vh;
+}
+
+.foot {
+  min-height: 15vh;
+}
+
+.foot h2,
+.foot p {
+  margin: 0;
+}
+
+.foot p {
+  font-size: 1.4rem;
+}
+
+.foot h2 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  padding: 2rem 0;
+  font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.ico {
+  min-height: 10vh;
+}
+
+.quick,
+.contac {
+  min-height: 30vh;
+
+}
+
+.quick h3,
+.contac h3 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #ff6b6b;
+  font-size: 1.8rem;
+
+
+}
+
+.quick ul,
+.contac ul {
+  margin: 0;
+  padding: 1rem 0;
+  width: 95%;
+  margin: auto;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.copy {
+  min-height: 5vh;
+
+}
+
+.copy p {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.ico ul,
+.ico li {
+  margin: 0;
+  display: inline;
+  list-style: none;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.ico ul {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.ico ul li i {
+  color: #ff6b6b;
+  align-self: center;
+}
+
+.quick ul li,
+.contac ul li {
+  font-size: 1.4rem;
+  padding: 0.3rem;
+}
+
+.quick ul li i,
+.contac ul li i {
+  padding-right: 0.4rem;
+}
+
+.quick ul li a,
+.contac ul li {
+  color: #ff6b6b;
+}
+
+.copy a {
+  color: #ff6b6b;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+
+}
+
+input,
+textarea,
+form button {
+  width: 95%;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: auto;
+  padding: 1rem 0.6rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+  
+}
+input:focus,textarea:focus {
+  outline: none;
+  border: 1px solid #ff6b6b;
+}
+form button {
+  text-transform: uppercase;
+background: none;
+  border: 1px solid #ff6b6b;
+  font-family: 'Space Grotesk', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+  background: #ff6b6b;
+}
+
+.contea {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+}
+form {
+  width: 95%;
+  margin: auto;
+  height: 100%;  
+}
+.cls {
+  padding: 1.5rem;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #fff; 
+}
+
+.dark-mode .ser-card, .dark-mode .des-card {
+    background-color: #333333;
+    color: #fff; 
+}
+.dark-mode .nav-links {
+  background-color: #333333;
+}
+.dark-mode .nav-links a {
+    color: #fff; 
+}
+.dark-mode .fa {
+  color: #ff6b6b;
+}
+.dark-mode .contea {
+  background: #121212;
+}
+.dark-mode .contea form input, .dark-mode .contea form textarea {
+  background: #333333;
+  color: #fff;
+}
+.dark-mode .contea form button{
+  color: #fff;
+}

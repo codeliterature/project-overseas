@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Grotesk&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Project Overseas</title>
+  <!-- UI KIT -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="heading">
+        Project OverSeas
+      </h1>
+
+      <i class="fa open fa-solid fa-bars-staggered"></i>
+
+      <ul class="hidden nav-links">
+        <i class="fa close fa-solid fa-xmark"></i>
+        <li><a class="ham-links" href="#home">Home</a></li>
+        <li><a class="ham-links" href="#about">About</a></li>
+        <li><a class="ham-links" href="#destination">Destination</a></li>
+        <li><a class="ham-links" href="#services">Services</a></li>
+        <li>
+          <p class="togbtn" onclick="myFunction()"><i class="fa fa-thin fa-sun" style="color: #ff6b6b;"></i>
+          </p>
+        </li>
+      </ul>
+
+
+    </nav>
+  </header>
+
+  <section class="hero animated-content">
+    <div  class="bg">
+      <h2 data-aos="fade-up">
+        Welcome to Project Overseas
+      </h2>
+      <p data-aos="fade-up">
+        Projects Overseas guarantees best of best. <br />
+        Travel through the world with us.
+      </p>
+      <button data-aos="fade-up" class="btn" id="home">Book Now</button>
+    </div>
+
+
+  </section>
+
+
+  <div class="contea hidden">
+    <span class="material-symbols-outlined cls">
+close
+</span>
+    <form data-aos="fade-up">
+      <input type="text" value="" placeholder="Your Name" />
+      <input type="email" value="" placeholder="Your E-Mail" />
+      <textarea maxlength="240" row="7" placeholder="Enter your message here"></textarea>
+      <button type="submit">submit</button>
+      
+    </form>
+
+  </div>
+
+
+  <section id="about">
+    <h2 class="heading">
+      Why Travel With Us?
+    </h2>
+    <div data-aos="fade-up" class="about-section">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+        <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <video height="600" width="400" autoplay loop muted>
+                <source src="a.mp4">
+              </video>
+              <div class="uk-position-center uk-panel"></div>
+            </div>
+          </li>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <video height="600" width="400" autoplay loop muted>
+                <source src="b.mp4">
+              </video>
+              <div class="uk-position-center uk-panel"></div>
+            </div>
+          </li>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <video height="600" width="400" autoplay loop muted>
+                <source src="c.mp4">
+              </video>
+              <div class="uk-position-center uk-panel"></div>
+            </div>
+          </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+          uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+          uk-slider-item="next"></a>
+
+      </div>
+    </div>
+    <p data-aos="fade-up">
+      Selecting a reliable travel agency, like us, offers numerous advantages. We prioritize convenience, expertise, and
+      peace of mind. Our experienced agents handle all the details, saving you time. With extensive destination
+      knowledge, we provide personalized recommendations. Safety is paramount, and we stay updated on travel advisories.
+      We offer exclusive deals, ensuring your trip's value. Our customer-centric approach tailors experiences to your
+      preferences, providing a worry-free journey. Choose us for a seamless and enjoyable travel experience.
+    </p>
+
+    <section />
+
+
+    <section id="destination">
+      <h2 class="heading">
+        Where to Go?
+      </h2>
+
+      <div class="des-container">
+        <div data-aos="fade-up" class="des-card">
+          <img src="japan.jpg" alt="Japan">
+          <h3>Japan</h3>
+          <p>
+            Japan is renowned for its blend of tradition and modernity, offering visitors a rich cultural experience
+            alongside cutting-edge technology. Its stunning landscapes, from cherry blossoms to Mount Fuji, add to its
+            allure.
+          </p>
+          <p class="linky">
+            <a href="">Visit </a>
+          </p>
+
+        </div>
+        <div data-aos="fade-up" class="des-card">
+          <img src="scotland.jpg" alt="Scotland">
+          <h3>Scotland</h3>
+
+          <p>
+            Scotland captivates with its dramatic landscapes, ancient castles, and a vibrant cultural heritage. Whisky
+            distilleries and the mystical Loch Ness are just a few attractions that make Scotland enchanting.
+          </p>
+          <p class="linky">
+            <a href="">Visit </a>
+          </p>
+        </div>
+        <div data-aos="fade-up" class="des-card">
+          <img src="newzealand.jpg" alt="Newzealand">
+          <h3>New Zealand</h3>
+
+          <p>
+            New Zealand boasts breathtaking natural beauty, from its fjords to its lush forests. It's a haven for
+            adventure seekers, offering activities like bungee jumping and hiking amidst stunning scenery.
+          </p>
+          <p class="linky">
+            <a href="">Visit </a>
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="services">
+      <h2 class="heading">
+        What do we Provide?
+      </h2>
+      <div class="ser-container">
+
+
+
+        <div data-aos="fade-up" class="ser-card">
+
+          <h3>
+            Affordable Services
+          </h3>
+          <p>
+            Our travel agency prides itself on providing budget-friendly options, so you can explore amazing
+            destinations without overspending.
+          </p>
+
+        </div>
+
+        <div data-aos="fade-up" class="ser-card">
+
+
+          <h3>
+            Guided Experience
+          </h3>
+          <p>
+            Let our expert guides lead you through remarkable journeys, offering insights and knowledge to make your
+            travels truly unforgettable.
+          </p>
+
+        </div>
+
+        <div data-aos="fade-up" class="ser-card">
+
+          <h3>
+            Food & Drinks
+          </h3>
+          <p>
+            Enjoy the convenience and taste of local cuisine with our inclusive food options, ensuring a delightful
+            culinary adventure on every trip.
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div data-aos="fade-up" class="foot">
+        <h2>
+          Project Overseas
+        </h2>
+        <p>
+          Connecting Continents, Bridging Cultures: Explore Our Global Ventures!
+        </p>
+      </div>
+      <div data-aos="fade-up" class="ico">
+        <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+
+      </div>
+      <div data-aos="fade-up" class="quick">
+        <h3>
+          Quick Links
+        </h3>
+        <ul>
+          <li> <i class="fa-solid fa-caret-right"></i><a href="#home">Home</a></li>
+          <li> <i class="fa-solid fa-caret-right"></i><a href="#about">About</a></li>
+          <li> <i class="fa-solid fa-caret-right"></i><a href="#destination">Destination</a></li>
+          <li> <i class="fa-solid fa-caret-right"></i><a href="#services">Services</a></li>
+        </ul>
+
+      </div>
+
+      <div data-aos="fade-up" class="contac">
+        <h3>
+          Contact info
+        </h3>
+        <ul>
+          <li> 1234 Elm Street</li>
+          <li>Cityville, Stateville</li>
+          <li>+1-555-123-4567</li>
+          <li>info@example.com</li>
+          <li>24/7 Customer Assistance</li>
+        </ul>
+
+      </div>
+
+      <div class="copy">
+        <p>
+          &#169; Copyright(2023).All Rights Reserved
+          <a href="https://magi-tech.vercel.app">MagiTech</a>
+        </p>
+
+      </div>
+
+
+    </footer>
+
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit-icons.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
