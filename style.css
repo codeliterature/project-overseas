@@ -171,13 +171,9 @@ video {
   padding-top: 2.5rem;
 }
 
-#destination {
-  min-height: 100vh;
-}
-
 .des-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -259,14 +255,6 @@ video {
   padding: 1rem;
 }
 
-footer {
-  min-height: 100vh;
-}
-
-.foot {
-  min-height: 15vh;
-}
-
 .foot h2,
 .foot p {
   margin: 0;
@@ -284,26 +272,13 @@ footer {
 
 }
 
-.ico {
-  min-height: 10vh;
-}
-
-.quick,
-.contac {
-  min-height: 30vh;
-
-}
-
 .quick h3,
 .contac h3 {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
   color: #ff6b6b;
   font-size: 1.8rem;
-
-
 }
-
 .quick ul,
 .contac ul {
   margin: 0;
@@ -312,11 +287,6 @@ footer {
   margin: auto;
   list-style: none;
   font-family: 'Poppins', sans-serif;
-}
-
-.copy {
-  min-height: 5vh;
-
 }
 
 .copy p {
