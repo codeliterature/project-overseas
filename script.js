@@ -12,8 +12,8 @@ $(".ham-links").click(function() {
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
-  $(".fa-thin").toggleClass("fa-sun");
   $(".fa-thin").toggleClass("fa-moon");
+  $(".fa-thin").toggleClass("fa-sun");
   $(".nav-links").addClass("hidden");
   $("body").removeClass("open-menu");
 }
